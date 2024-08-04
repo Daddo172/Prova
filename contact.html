@@ -57,12 +57,15 @@
 			</div>
 			<div class="footer">
 				<div class="contact">
-					<h1>INQUIRY FORM</h1>
-					<form action="index.html">
-						<input type="text" name="Name" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<input type="text" name="Email" value="Email" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<textarea name="meassage" cols="50" rows="7">Share your thoughts</textarea>
+					<h1>Prenotazione</h1>
+					<form action="https://api.web3forms.com/submit" method="POST">
+						<input type="hidden" name="access_key" value="133c48c6-4453-46de-ab78-dfce3ee6fa3d">
+						<input type="date" name="Data" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<input type="email" name="Email" value="Email" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<input type="name" name="nome" value="Nome" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<input type="time" name="Orario" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<input type="number" name="Email" value="1" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
+						<textarea name="RIhcieste speciali" cols="50" rows="7" placeholder="Richieste speciali"></textarea>
 						<input type="submit" value="Send" id="submit">
 					</form>
 				</div>
